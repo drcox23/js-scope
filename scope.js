@@ -3,10 +3,13 @@ var isCookieJarOpen = null;
 
 function closeLid() {
   /* answer here */
+isCookieJarOpen = false;
+
 }
 
 function openLid() {
   /* answer here */
+  isCookieJarOpen = true;
 }
 
 
@@ -17,10 +20,11 @@ function outerFunction() {
 
   function innerFunction() {
     var world = 'World';
-    return /* answer here */;
+    return hello + " " + world;
   }
   return innerFunction();
 }
+console.log(outerFunction());
 
 
 // This is a function that takes in a 2d-array (or matrix) and returns the sum of all elements
